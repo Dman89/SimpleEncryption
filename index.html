@@ -4,14 +4,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="master.css">
 </head>
 <body>
-  <input type="text" id="code">
+  <h1>Simple Message Encryption</h1>
+  <div class="boxContainer">
+  <h2>Encode Message</h2>
+  <!-- <input type="text" id="code"> -->
   <input type="text" id="input" oninput="takeInput()">
-  <div id="outOfInput"></div>
-  <input type="text" id="code2">
+  <textarea id="outOfInput" disabled></textarea>
+</div>
+<div class="boxContainer">
+  <h2>Decode Message</h2>
+  <!-- <input type="text" id="code2"> -->
   <input type="text" id="input2" oninput="decryptionOfString()">
-  <div id="outOfInput2"></div>
+  <textarea id="outOfInput2" disabled></textarea>
+</div>
 
 
 

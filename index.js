@@ -1,7 +1,8 @@
 function takeInput() {
   var input = document.getElementById('input').value;
+
   // OUTPUT
-    let outputStringFromEncryption = "";
+  let outputStringFromEncryption = "";
   for (var x = 0; x < input.length; x++) {
     let tempLetterInEncryption = "";
 // 32 - 126
@@ -12,7 +13,7 @@ function takeInput() {
       }
         //if not in range
       else {
-        tempLetterInEncryption = (input.charCodeAt(x) - 94) + 7;
+        tempLetterInEncryption = (input.charCodeAt(x) - 94) + 6;
       }
         //compose encrypted
         outputStringFromEncryption += String.fromCharCode(tempLetterInEncryption);
@@ -27,12 +28,13 @@ var decryptionOfString = function() {
   for (var x = 0; x < input.length; x++) {
     let tempLetterInDecryption = "";
 // 32 - 126
+    //set number range ()
     if (input.charCodeAt(x) >= 32 || input.charCodeAt(x) <= 126) {
-        //set number range ()
+      // To lower of a number
       if (input.charCodeAt(x) <= 38 && input.charCodeAt(x) >= 32) {
-        tempLetterInDecryption = (input.charCodeAt(x) + 94) - 7;
+        tempLetterInDecryption = (input.charCodeAt(x) + 94) - 6;
       }
-        //if in range
+        // High enough number
       else {
         tempLetterInDecryption = input.charCodeAt(x) - 7;
       }
