@@ -2,9 +2,9 @@ function takeInput() {
   var input = document.getElementById('input').value;
 
   // OUTPUT
-  let outputStringFromEncryption = "";
+  var outputStringFromEncryption = "";
   for (var x = 0; x < input.length; x++) {
-    let tempLetterInEncryption = "";
+    var tempLetterInEncryption = "";
 // 32 - 126
     if (input.charCodeAt(x) >= 32 && input.charCodeAt(x) <= 126) {
         //set number range (119)
@@ -24,9 +24,9 @@ function takeInput() {
 
 var decryptionOfString = function() {
   var input = document.getElementById('input2').value;
-  let outputStringFromDecryption = "";
+  var outputStringFromDecryption = "";
   for (var x = 0; x < input.length; x++) {
-    let tempLetterInDecryption = "";
+    var tempLetterInDecryption = "";
 // 32 - 126
     //set number range ()
     if (input.charCodeAt(x) >= 32 || input.charCodeAt(x) <= 126) {
